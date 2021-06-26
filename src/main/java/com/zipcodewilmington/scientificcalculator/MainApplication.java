@@ -14,4 +14,21 @@ public class MainApplication {
         Console.println("The user input %s as a integer", i);
         Console.println("The user input %s as a d", d);
     }
+    public static void switchUnitsMode(String mode){
+        System.out.println("Please choose unit: Degrees or Radians");
+        if(mode == "Degrees"){
+            return Math.toDegrees();
+            System.out.println("You are now working in Degrees.");
+        }else if(mode == "Radians"){
+            return Math.toRadians();
+            System.out.println("You are now working in Radians.");
+        }
+    }
+    public static void sin(){
+        switchUnitsMode();
+        if(mode == Degrees){
+            
+        }
+
+    }
 }
