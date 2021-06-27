@@ -5,12 +5,17 @@ package com.zipcodewilmington.scientificcalculator;
  */
 
 public class MainApplication {
-    private static double curValue;
-    private static String operator;
-    private final double input;
+     double curValue=0;
+     String operator=null;
+     double input;
+
+    public MainApplication(){
+        setCurValue(0);
+        setOperator(null);
+    }
 
     public MainApplication(double input, String operator) {
-        this.input=input;
+        this.curValue=input;
     }
 
     public static void main(String[] args) {
@@ -18,7 +23,7 @@ public class MainApplication {
         Console.getStringInput();
     }
 
-        public static double getCurValue() {
+        public  double getCurValue() {
             return curValue;
         }
 
@@ -26,8 +31,8 @@ public class MainApplication {
             this.curValue = curValue;
         }
 
-        public static String getOperator() {
-            return operator;
+        public  String getOperator() {
+            return this.operator;
         }
 
         public void setOperator(String operator) {
@@ -38,11 +43,28 @@ public class MainApplication {
             return input1+input2;
         }
 
-        public static void display(String result){
+        public void display(double result){
             System.out.println("Your result is: "+result);
         }
 
-    double substract(double input1, double input2) {
+    public static double substract(double input1, double input2) {
         return input1-input2;
+    }
+
+    public double multiply(double input, double input2) {
+        return input*input2;
+    }
+
+    public void storeCurrentNumber(double input) {
+        this.setCurValue(input);
+    }
+
+    public double divide(double input, double input2) {
+        return input/input2;
+    }
+
+
+    public double inverse(double input) {
+        return 1/input;
     }
 }
