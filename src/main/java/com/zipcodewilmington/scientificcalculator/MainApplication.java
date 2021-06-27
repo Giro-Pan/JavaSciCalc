@@ -43,8 +43,9 @@ public class MainApplication {
             return input1+input2;
         }
 
-        public void display(double result){
-            System.out.println("Your result is: "+result);
+        public void display(double result)
+        {
+            System.out.printf("Your result is: %5.2f",result);
         }
 
     public static double substract(double input1, double input2) {
