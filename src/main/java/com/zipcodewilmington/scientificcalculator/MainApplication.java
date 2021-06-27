@@ -4,6 +4,7 @@ package com.zipcodewilmington.scientificcalculator;
  * Created by leon on 2/9/18.
  */
 public class MainApplication {
+
     public static void main(String[] args) {
         Console.println("Welcome to my calculator!");
         String s = Console.getStringInput("Enter a string");
@@ -14,21 +15,41 @@ public class MainApplication {
         Console.println("The user input %s as a integer", i);
         Console.println("The user input %s as a d", d);
     }
-    public static void switchUnitsMode(String mode){
-        System.out.println("Please choose unit: Degrees or Radians");
-        if(mode == "Degrees"){
-            return Math.toDegrees();
-            System.out.println("You are now working in Degrees.");
-        }else if(mode == "Radians"){
-            return Math.toRadians();
-            System.out.println("You are now working in Radians.");
-        }
-    }
-    public static void sin(){
-        switchUnitsMode();
-        if(mode == Degrees){
-            
-        }
 
+    /**
+     * Start of Trig Functions
+     */
+    public static double sin(int a){
+        double sinVal = 0.0;
+        double b = Math.toRadians(a);
+        sinVal += Math.sin(b);
+        return sinVal;
+    }
+    public static double cos(int a){
+        double cosVal = 0.0;
+        double b = Math.toRadians(a);
+        cosVal += Math.cos(b);
+        return cosVal;
+    }
+    public static double tan(int a){
+        double tanVal = 0.0;
+        double b = Math.toRadians(a);
+        tanVal += Math.tan(b);
+        return tanVal;
+    }
+    public static double inverseSin(double a) {
+        double inverseSinVal = 0.0;
+        inverseSinVal += Math.asin(a);
+        return inverseSinVal;
+    }
+    public static double inverseCos(double a){
+        double inverseCosVal = 0.0;
+        inverseCosVal += Math.acos(a);
+        return inverseCosVal;
+    }
+    public static double inverseTan(double a){
+        double inverseTanVal = 0.0;
+        inverseTanVal += Math.atan(a);
+        return inverseTanVal;
     }
 }
