@@ -3,7 +3,7 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class CalculatorEngine {
     private Computer computer=new Computer();//does calculations
-    private CalcDisplay display=new CalcDisplay();//stores result and also previous calculations
+    private CalculatorDisplay display=new CalculatorDisplay();//stores result and also previous calculations
 
     public void performAdd() {
         double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
