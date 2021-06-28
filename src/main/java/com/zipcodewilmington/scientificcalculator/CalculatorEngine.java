@@ -187,4 +187,3 @@ public class CalculatorEngine {
         display.displayResult(cubed);
     }
 }
-
