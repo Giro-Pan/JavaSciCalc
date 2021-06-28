@@ -95,34 +95,48 @@ public class Calculator {
                     break;
                 case "tan":
                     engine.performTan();
+                    break;
                 case "sin-1":
                     engine.performInverseSin();
+                    break;
                 case "cos-1":
                     engine.performInverseCos();
+                    break;
                 case "tan-1":
                     engine.performInverseTan();
+                    break;
                 case "log":
                     engine.performLog();
+                    break;
                 case "10^x":
                     engine.performInverseLog();
+                    break;
                 case "ln":
                     engine.performLn();
+                    break;
                 case "e^x":
                     engine.performInverseLn();
+                    break;
                 case "!":
                     engine.performFactorial();
-                    //Areas
+                    break;
+                //Areas
                 case "areaR":
                     engine.performAreaRectangle();
+                    break;
                 case "areaT":
                     engine.performAreaTriangle();
+                    break;
                 case "areaC":
                     engine.performAreaCircle();
+                    break;
                 case "cube root":
                     engine.performCubeRoot();
+                    break;
                 case "cubed":
                     engine.performCubed();
-                    //Display
+                    break;
+                //Display
             /*case "Binary":
                 display.toBinary();
             case "Octal":
@@ -136,4 +150,5 @@ public class Calculator {
         }
     }
 }
+
 

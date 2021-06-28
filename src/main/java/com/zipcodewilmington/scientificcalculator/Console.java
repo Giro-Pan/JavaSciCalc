@@ -62,8 +62,14 @@ public class Console {
                 "!\n" +
                 "areaR(length,width)\n" +
                 "areaT(base,height)\n" +
-                "areaC(radius)\n");
+                "areaC(radius)\n" +
+                "cubed\n" +
+                "cube root\n");
+
         //System.out.println("Enter your choice");
 
     }
 }
+
+
+

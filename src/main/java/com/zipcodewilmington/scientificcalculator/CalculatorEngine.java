@@ -3,11 +3,11 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class CalculatorEngine {
     private Computer computer=new Computer();//does calculations
-    private CalculatorDisplay display=new CalculatorDisplay();//stores result and also previous calculations
+    private CalcDisplay display=new CalcDisplay();//stores result and also previous calculations
 
     public void performAdd() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
-        double secondValue=Console.getDoubleInput("Enter second number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
+        double secondValue= Console.getDoubleInput("Enter second number: ");
         double sum=computer.add(firstValue,secondValue);
         display.setValue(sum);
         display.displayResult(sum);
@@ -22,16 +22,16 @@ public class CalculatorEngine {
     }
 
     public void performMultiply() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
-        double secondValue=Console.getDoubleInput("Enter second number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
+        double secondValue= Console.getDoubleInput("Enter second number: ");
         double multiplication=computer.multiply(firstValue,secondValue);
         display.setValue(multiplication);
         display.displayResult(multiplication);
     }
 
     public void performDivide() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
-        double secondValue=Console.getDoubleInput("Enter second number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
+        double secondValue= Console.getDoubleInput("Enter second number: ");
         if(secondValue==0){
             display.displayResult("ERR");
         }
@@ -41,26 +41,26 @@ public class CalculatorEngine {
     }
 
     public void performSquare() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
         double square=computer.findSquare(firstValue);
         display.displayResult(square);
     }
 
     public void performSquareRoot() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
         double squareRoot=computer.findSquareRoot(firstValue);
         display.displayResult(squareRoot);
     }
 
     public void performExponentiation() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
-        double secondValue=Console.getDoubleInput("Enter second number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
+        double secondValue= Console.getDoubleInput("Enter second number: ");
         double exponent=computer.findExponent(firstValue,secondValue);
         display.displayResult(exponent);
     }
 
     public void performInverse() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
         if(firstValue<0){
             System.out.println("ERR");
             System.exit(0);
@@ -71,7 +71,7 @@ public class CalculatorEngine {
 
 
     public void invertSign() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
         double invert=computer.findInvert(firstValue);
         display.displayResult(invert);
     }
@@ -85,36 +85,36 @@ public class CalculatorEngine {
     }
 
     public void changeNumber() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
         display.setValue(firstValue);
     }
 
     public void performSin() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
         double sinValue = computer.findSinValue(firstValue);
         display.displayResult(sinValue);
     }
 
     public void performCos() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
         double cosValue = computer.findCosValue(firstValue);
         display.displayResult(cosValue);
     }
 
     public void performTan() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
         double tanValue = computer.findTanValue(firstValue);
         display.displayResult(tanValue);
     }
 
     public void performInverseSin() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
         double inverseSin = computer.findInverseSinValue(firstValue);
         display.displayResult(inverseSin);
     }
 
     public void performInverseCos() {
-        double firstValue=Console.getDoubleInput("Please Enter ur first Number: ");
+        double firstValue= Console.getDoubleInput("Please Enter ur first Number: ");
         double inverseCos = computer.findInverseCosValue(firstValue);
         display.displayResult(inverseCos);
     }
@@ -187,3 +187,5 @@ public class CalculatorEngine {
         display.displayResult(cubed);
     }
 }
+
+

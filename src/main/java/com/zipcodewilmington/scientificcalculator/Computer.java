@@ -75,11 +75,11 @@ public class Computer {
     }
 
     public double findInverseTanValue(double firstValue) {
-        double inverseCosVal = 0.0;
+        double inverseTanVal = 0.0;
         if (firstValue > 1.0 || firstValue < -1) {
             System.out.println("Please select a number greater than zero and less than 1."); }
-        inverseCosVal += Math.atan(firstValue);
-        return inverseCosVal;
+        inverseTanVal += Math.atan(firstValue);
+        return inverseTanVal;
     }
 
     public double findLog(double firstValue) {
@@ -107,7 +107,7 @@ public class Computer {
     }
 
     public double areaRectangle(double firstValue, double secondValue) {
-            return firstValue * secondValue;
+        return firstValue * secondValue;
     }
 
     public double areaTriangle(double firstValue, double secondValue) {
@@ -126,3 +126,4 @@ public class Computer {
         return Math.pow(firstValue, 3);
     }
 }
+
