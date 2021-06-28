@@ -10,11 +10,7 @@ public class TestMainApplication {
     @org.junit.Test
     public void TestPrintMethod()
     {
-        //double actualNumber= CoreClass.getCurValue();
-        int actualNumber= (int) MainApplication.add(5,5);
-        int expectedNumber=10;
-        Assert.assertEquals(expectedNumber,actualNumber);
-        //System.out.println("Hello");
+
     }
 
 }
