@@ -17,4 +17,27 @@ public class CalculatorDisplay {
     public double getCurrentValue(){
         return currValue;
     }
+    public static String toBinary(double currValue) {
+        int value = (int) Math.round(currValue);
+        return Integer.toBinaryString(value);
+    }
+    public static String toOctal(double currValue) {
+        int value = (int) Math.round(currValue);
+        return Integer.toOctalString(value);
+    }
+    public static int toDecimal(double currValue) {
+        int value = (int) Math.round(currValue);
+        return Integer.parseInt(String.valueOf(value), 10);
+    }
+    public static String toHexadecimal(double currValue) {
+        int value = (int) Math.round(currValue);
+        return Integer.toHexString(value);
+    }
+    public double toRadians(double currValue) {
+        return Math.toRadians(currValue);
+    }
+    public double toDegrees(double currValue) {
+        return Math.toDegrees(currValue);
+    }
 }
+

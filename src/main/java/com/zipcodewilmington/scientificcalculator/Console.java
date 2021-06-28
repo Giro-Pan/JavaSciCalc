@@ -37,12 +37,38 @@ public class Console {
 
     public static void printActions() {
         System.out.println("Available actions: press\n");
-        System.out.println("+: to add\n"+
+        System.out.println("Q: to quit\n" +
+                "+: to add\n"+
                 "-: to substract\n"+
                 "/: to divide\n"+
-                "5: to print Menu\n"+
-                "0: to Quit\n");
+                "displayCurrent\n" +
+                "clearDisplay\n" +
+                "changeNumber\n" +
+                "square\n" +
+                "sqrt\n" +
+                "exponent\n" +
+                "inverse\n" +
+                "invertSign\n" +
+                "sin\n" +
+                "cos\n" +
+                "tan\n" +
+                "sin-1\n" +
+                "cos-1\n" +
+                "tan-1\n" +
+                "log\n" +
+                "10^x\n" +
+                "ln\n" +
+                "e^x\n" +
+                "!\n" +
+                "areaR(length,width)\n" +
+                "areaT(base,height)\n" +
+                "areaC(radius)\n" +
+                "cubed\n" +
+                "cube root\n");
+
         //System.out.println("Enter your choice");
 
     }
 }
+
+
