@@ -40,4 +40,3 @@ public class CalculatorDisplay {
         return Math.toDegrees(currValue);
     }
 }
-
